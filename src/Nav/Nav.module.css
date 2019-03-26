@@ -1,0 +1,20 @@
+
+.nav {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item {
+  display: inline-block;
+  padding: 0.3rem;
+  color: var(--color-dark);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.item:hover,
+.item:focus {
+  border-bottom-color: var(--color-dark);
+}

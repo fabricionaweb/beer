@@ -4,45 +4,31 @@
   margin: 0 auto;
 }
 
-.logo {
+.beer {
+  overflow: hidden;
   margin: 4rem auto;
-  text-align: center;
 }
 
-  .logo img {
-    max-width: 200px;
-  }
-
-.nav {
-  margin: 2rem auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.beerTitle {
+  margin-top: 0;
 }
 
-.navItem {
+.beerImg {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.beerBtn {
   display: inline-block;
-  padding: 0.5rem;
+  font-size: .85rem;
+  padding: .8rem;
   color: var(--color-dark);
   text-decoration: none;
-}
-
-.navItem:hover,
-.navItem:focus {
-  text-decoration: underline;
-}
-
-.searchBar {
-  margin-top: 2rem;
-  width: 100%;
-  padding: 1rem;
-  line-height: 1;
   border: 1px solid var(--color-dark);
 }
 
-.searchBar:active,
-.searchBar:focus {
-  outline: 0;
+.beerBtn:hover {
   box-shadow: 0 0 0 1px var(--color-dark);
-  background: var(--color-light);
 }
