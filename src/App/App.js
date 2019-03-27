@@ -29,6 +29,10 @@ function App() {
                 return <p>Loading...</p>
               }
 
+              if (response.length === 0) {
+                return <p>No beers found</p>
+              }
+
               return <BeerList beers={response} />
             }}
           </SearchResults>

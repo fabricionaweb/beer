@@ -4,31 +4,6 @@
   margin: 0 auto;
 }
 
-.beer {
-  overflow: hidden;
-  margin: 4rem auto;
-}
-
-.beerTitle {
-  margin-top: 0;
-}
-
-.beerImg {
-  float: left;
-  width: 10rem;
-  height: 10rem;
-  object-fit: contain;
-}
-
-.beerBtn {
-  display: inline-block;
-  font-size: .85rem;
-  padding: .8rem;
-  color: var(--color-dark);
-  text-decoration: none;
-  border: 1px solid var(--color-dark);
-}
-
-.beerBtn:hover {
-  box-shadow: 0 0 0 1px var(--color-dark);
+.error {
+  color: var(--color-red);
 }
