@@ -14,7 +14,12 @@ export function searchByName(beerName) {
   return request(`${BASE_URL}?beer_name=${encodeURI(beerName)}`)
 }
 
+export function getById(id) {
+  return request(`${BASE_URL}/${id}`).then(([beer]) => beer)
+}
+
 export default {
   request,
-  searchByName
+  searchByName,
+  getById
 }
