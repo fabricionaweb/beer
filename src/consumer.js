@@ -11,7 +11,9 @@ function request(endpoint) {
 }
 
 export function searchByName(beerName) {
-  return request(`${BASE_URL}?beer_name=${encodeURI(beerName)}`)
+  return request(`${BASE_URL}?beer_name=${encodeURI(beerName)}`).then(
+    response => response.filter(beer => beer.image_url)
+  )
 }
 
 export function getById(id) {
