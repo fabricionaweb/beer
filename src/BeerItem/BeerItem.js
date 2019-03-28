@@ -1,31 +1,35 @@
 import React from "react"
-import { shape, string } from "prop-types"
+import { Link } from "react-router-dom"
+import { number, string } from "prop-types"
 import styles from "./BeerItem.module.css"
 
-function BeerItem({ name, tagline, imageUrl }) {
+function BeerItem({ id, name, tagline, imageUrl }) {
+  const beerUrl = `/view/${id}`
+
   return (
     <article className={styles.beer}>
-      <a href="/">
+      <Link to={beerUrl}>
         <img className={styles.img} alt={name} src={imageUrl} />
-      </a>
+      </Link>
 
       <h2 className={styles.title}>
-        <a href="/">{name}</a>
+        <Link to={beerUrl}>{name}</Link>
       </h2>
 
       <p>{tagline}</p>
 
-      <a href="/" className={styles.button}>
+      <Link to={beerUrl} className={styles.button}>
         Know more
-      </a>
+      </Link>
     </article>
   )
 }
 
-BeerItem.propTypes = shape({
-  name: string,
-  tagline: string,
-  imageUrl: string
-}).isRequired
+BeerItem.propTypes = {
+  id: number.isRequired,
+  name: string.isRequired,
+  tagline: string.isRequired,
+  imageUrl: string.isRequired
+}
 
 export default BeerItem

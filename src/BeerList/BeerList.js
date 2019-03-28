@@ -6,6 +6,7 @@ function BeerList({ beers }) {
   return beers.map(beer => (
     <BeerItem
       key={beer.id}
+      id={beer.id}
       name={beer.name}
       tagline={beer.tagline}
       imageUrl={beer.image_url}
