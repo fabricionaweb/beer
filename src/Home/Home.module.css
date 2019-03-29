@@ -1,0 +1,25 @@
+.pages {
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.prevPage,
+.nextPage {
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.prevPage:hover,
+.nextPage:hover {
+  border-bottom-color: var(--color-dark);
+}
+
+.prevPage {
+  float: left;
+}
+
+.nextPage {
+  float: right;
+}

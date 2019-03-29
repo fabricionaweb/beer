@@ -3,6 +3,10 @@ import { arrayOf, object } from "prop-types"
 import BeerItem from "../BeerItem/BeerItem"
 
 function BeerList({ beers }) {
+  if (beers.length === 0) {
+    return <p>No beers found</p>
+  }
+
   return beers.map(beer => (
     <BeerItem
       key={beer.id}
