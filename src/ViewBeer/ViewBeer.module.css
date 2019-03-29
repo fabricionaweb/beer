@@ -1,0 +1,22 @@
+.details {
+  margin: 4rem auto;
+}
+
+.img {
+  float: right;
+  max-width: 8rem;
+  margin-left: 2rem;
+}
+
+.subTitle {
+  margin-top: 2rem;
+}
+
+.sheet {
+  padding-left: 2.5rem;
+}
+
+.sheet dt {
+  float: left;
+  display: list-item;
+}

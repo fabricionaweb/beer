@@ -18,14 +18,14 @@ function ViewBeer({ match }) {
     <section className={styles.details}>
       <img className={styles.img} src={beer.image_url} alt={beer.name} />
 
-      <h2 className={styles.title}>{beer.name}</h2>
-      <p className={styles.subTitle}>{beer.tagline}</p>
+      <h2>{beer.name}</h2>
+      <p>{beer.tagline}</p>
 
-      <h3>Description</h3>
+      <h3 className={styles.subTitle}>Description</h3>
       <p className={styles.description}>{beer.description}</p>
 
-      <h3>Sheet</h3>
-      <dl>
+      <h3 className={styles.subTitle}>Sheet</h3>
+      <dl className={styles.sheet}>
         <dt>ABV</dt>
         <dd>{beer.abv}</dd>
         <dt>EBC</dt>
@@ -36,14 +36,14 @@ function ViewBeer({ match }) {
         <dd>{beer.ph}</dd>
       </dl>
 
-      <h3>Pairs with</h3>
+      <h3 className={styles.subTitle}>Pairs with</h3>
       <ul>
         {beer.food_pairing.map(pair => (
           <li key={pair}>{pair}</li>
         ))}
       </ul>
 
-      <h3>Tips</h3>
+      <h3 className={styles.subTitle}>Tips</h3>
       <p>{beer.brewers_tips}</p>
     </section>
   )
